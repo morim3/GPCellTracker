@@ -135,6 +135,10 @@ class DGPMotionEstimator(torch.nn.Module):
 
         return sample
 
+    def get_move(self, pos, time):
+        variable = self.transition[time](pos.view((-1, self.dim)))
+        return variable.mean, variable.variance
+
     def gp_loss(self, data, time, hidden, pos_zero, active_dim=None, batch_ratio=1):
         sample = self.sample(pos_zero)
         expected_likelihood = self.expected_likelihood(data, time, sample)

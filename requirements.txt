@@ -1,0 +1,16 @@
+torch
+gpytorch
+opencv-python
+joblib
+matplotlib
+numpy
+pandas
+scikit-image
+scikit-learn
+scipy
+Pillow
+tqdm
+pytest
+attrdict
+tifffile
+imagecodecs

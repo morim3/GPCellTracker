@@ -1,0 +1,7 @@
+"split_pair_max_dist": 0.1
+"split_max_dist": 0.1
+"data_match_max_dist": 0.1
+"data_weight": 1
+"hidden_weight": 1
+"death_weight": 1
+"split_weight": 1
